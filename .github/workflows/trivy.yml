@@ -37,7 +37,7 @@ jobs:
         uses: aquasecurity/trivy-action@7b7aa264d83dc58691451798b4d117d53d21edfe
         with:
           image-ref: 'index.docker.io/${{ secrets.DOCKER_REGISTRY_SERVER_USERNAME }}/scvanegasa-app:latest'
-          format: 'template'
+          format: 'sarif'
           template: '@/contrib/sarif.tpl'
           output: 'trivy-results.sarif'
           severity: 'CRITICAL,HIGH'
