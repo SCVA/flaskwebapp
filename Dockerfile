@@ -1,5 +1,5 @@
 # Instalar python para flask
-FROM python:3.13.8-alpine
+FROM python:3.13.9-alpine3.22
 
 # Directorio de trabajo
 WORKDIR /app
